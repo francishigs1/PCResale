@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="animate__animated animate__fadeIn">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Local Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Link to custom stylesheet -->
+    <link href="../css/customPC.css" rel="stylesheet">
+
+	<!-- Link to External Animation -->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+
+    <title>GPU</title>
+  </head>
+  <body>
+	
+	<div class="container-fluid"><!-- Main Page Container Start -->
+		<div class="row">
+		
+			<div class="col-2" id="sideBar"><!-- Left Column Start -->
+				<img src="../img/sideLeft.gif" id="sideHeight" class="card-img-top" alt="Left">
+			</div><!-- Left Column End -->
+			
+			<div class="col-8"><!-- Middle Column Start -->
+			
+				<div class="row">
+					<div class="col-12" id="pageTitles">
+						<h2>GPU</h2>
+					</div>
+				</div>	
+		
+				<div class= "row" id="buttonRow">
+					<div id="myBtnContainer">
+					  <button class="btn active" onclick="filterSelection('all')" style="color:black"> Show all</button>
+					  <button class="btn" onclick="filterSelection('new')" style="color:green"> New</button>
+					  <button class="btn" onclick="filterSelection('gradeA')" style="color:red"> Grade A</button>
+					  <button class="btn" onclick="filterSelection('gradeB')" style="color:blue"> Grade B</button>
+					  <button class="btn" onclick="filterSelection('gradeC')" style="color:grey"> Grade C</button>
+					  <a href="../Parts.html"><img src="../img/goBack.png" height="50px" style="margin-left:40px;" alt="Back"></a>
+					</div>
+				</div>
+		
+				<div class="row" id="allProducts"><!-- Row -->
+				
+				<!-- All Products -->	
+				<div class="filterDiv new">	
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu1.jpg" alt="gpu1">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€400<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">NVIDIA QUADRO RTX</h5>
+									<p class="card-text">
+										<ul>
+											<li>NVIDIA Quadro processor</li>
+											<li>160 watts</li>
+											<li>Super-fast graphics</li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="gradeNew">Grade: <span style="color:green">New</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+					
+				<div class="filterDiv gradeB">	
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu2.jpg" alt="gpu2">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€370<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">GEFORCE GTX 1080</h5>
+									<p class="card-text">
+										<ul>
+											<li>Mini display ports</li>
+											<li>Excellent clock speed</li>
+											<li>graphics chipset</li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="grade">Grade: <span style="color:blue">B</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="filterDiv gradeB">	
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu3.jpg" alt="gpu3">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€340<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">GEFORCE GTX 1060</h5>
+									<p class="card-text">
+										<ul>
+											<li>Mini display ports</li>
+											<li>Pascal GPU</li>
+											<li>graphics chipset</li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="grade">Grade: <span style="color:blue">B</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="filterDiv new">
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu4.jpg" alt="gpu4">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€370<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">AMD RADEON PRO</h5>
+									<p class="card-text">
+										<ul>
+											<li>Mini display port</li>
+											<li>Super-fast graphics</li>
+											<li>Polaris architecture</li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="gradeNew">Grade: <span style="color:green">New</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="filterDiv gradeA">
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu5.jpg" alt="gpu5">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€350<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">Blackmagic Design </h5>
+									<p class="card-text">
+										<ul>
+											<li>Top quality sound</li>
+											<li>Express capture</li>
+											<li>Supports SD </li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="grade">Grade: <span style="color:red">A</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filterDiv gradeC">
+					<div class="card" id="contentCard" style="width: 500px;">
+						<div class="row no-gutters">
+							<div class="col-sm-5" id="cardImage">
+								<img class="card-img" id="productIMG" src="../img/gpu/gpu6.jpg" alt="gpu6">
+								<div class="card-body">
+									<div class="row">
+										<p id="cardPrice">€300<p>
+									</div>
+								</div>						
+							</div>
+							<div class="col-sm-7" id="cardText">
+								<div class="card-body">
+									<h5 class="card-title">GEFORCE GTX 1070</h5>
+									<p class="card-text">
+										<ul>
+											<li>Dual fan</li>
+											<li>Specification graphics </li>
+											<li>Mini display port</li>
+										</ul> 
+									</p>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<p id="grade">Grade: <span style="color:grey">C</span><p>
+										<a href="../Cart.html" class="btn btn-primary" id="buyNow">Buy Now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- All Products End -->	
+			
+				</div><!-- Row End -->
+			
+			</div><!-- Middle Column End -->
+			
+			<div class="col-2" id="sideBar"><!-- Right Column Start -->
+				<img src="../img/sideRight.gif" id="sideHeight" class="card-img-top" alt="Right">
+			</div><!-- Right Column End -->
+			
+		</div>
+	</div><!-- Main Page Container End -->
+	
+	<!-- Test Footer -->		
+	<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl" id="footer">
+				<p>PC RESALE LIMITED</p>
+			</div>
+		</div>
+		</div>
+	</footer>	
+		
+	<!--Linking HTML with JavaScript-->
+	<script src="../js/PC_JS.js"></script>
+	
+  </body>
+</html>
