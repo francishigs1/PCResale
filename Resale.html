@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Local Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Link to custom stylesheet -->
+    <link href="css/customPC.css" rel="stylesheet">
+
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+
+    <title>Form</title>
+  </head>
+  <body>
+	
+  <div class="container-fluid"><!-- Banner -->
+	  <div class="row">
+		  <div class="col-xl" style="position: relative; left: 0; top: 0;">
+			 <img src="img/blackBanner.gif"  height="400px" class="banner" alt="banner">
+			 <img src="img/siteLogo.gif" class="logo "height="300" alt="logo">
+			 <img src="img/PCR.png" class="logo2 "height="300" alt="logo">
+		  </div>
+	  </div>
+  </div><!-- Banner -->
+	
+	<nav class="navbar navbar-expand-lg" style="background-color: #333333;" id="wholeBar"><!-- Navbar -->
+	  <div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav" id="navText">
+			<a class="nav-link" href="Home.html">Home</a>
+			<a class="nav-link" href="Parts.html">Resale</a>
+			<a class="nav-link active" aria-current="page" id="current" href="Resale.html">Form</a>
+			<a class="nav-link" href="Support.html">Support</a>
+			  <li class="nav-item" id="cccart">
+				<a href="Cart.html">
+					<span><img src="img/cartWhite.png" id="navCart" height="30"></span>
+				</a>
+			  </li>	
+		  </div>
+		</div>
+	  </div>
+	</nav><!-- Navbar -->
+
+	
+	<div class="container-fluid"><!-- Start Main Page Container -->
+	
+		<div class="row">
+		
+			<div class="col-2" id="sideBar"><!-- Left Column Start -->
+				<img src="img/sideLeft.gif" id="sideHeight" class="card-img-top" alt="Left">
+			</div><!-- Left Column End -->
+			
+			<div class="col-8"><!-- Middle Column Start -->
+			
+				<div class="row">
+					<div class="col-12" id="pageTitles">
+						<h2>Form</h2>
+					</div>
+				</div>	
+			
+				<div class="row no-gutters" style="margin-top:50px;"><!-- Form Text and Button Start -->
+					<div class="col-4">
+						<div class="formText">
+							<h2>PC Resale Form</h2>
+							<p><b>Follow this tutorial:</b>
+							<br><b>1.</b> Review this form and collect information.
+							<br><b>2.</b> Download the form from below.
+							<br><b>3.</b> Fill in each section necessary.
+							<br><b>4.</b> Repackage your PC Part.
+							<br><b>5.</b> Bring the form and Part into our store.
+							
+							<br><br>Review this form carefully and make sure not to write on the BUYER section,
+							the customer writes on the SELLER and Description section only.
+							
+							<br><br>We hope you will be happy with our service.
+							<br><b><i>Thank you!</i></b>
+							</p>
+						</div>
+						
+						<div class="printSizing">
+							<button id="printButton"type="button" class="btn btn-primary mt-2" onclick="primary()">
+							Print Form<span><img src="img/print.png" id="navCart" height="30"></span></button>
+
+							<div id="alert1" class="alert alert-primary alert-dismissible fade show mt-2" role="alert">
+								<strong>Printer found!</strong> <br>Check your printer and collect your form.
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-8">
+						<img src="img/resaleForm.png" id="formImage" alt="form">				
+					</div>	
+						
+				</div><!-- Form Text and Button End -->
+						
+			</div><!-- Middle Column End -->
+	  
+	  			<div class="col-2" id="sideBar"><!-- Right Column Start -->
+				<img src="img/sideRight.gif" id="sideHeight" class="card-img-top" alt="Right">
+			</div><!-- Right Column End -->
+	  
+		</div>
+
+	</div><!-- End Main Page Container -->
+	
+	</div>
+		
+    <!-- Optional JavaScript; choose one of the two! -->
+	<script>
+	document.getElementById("alert1").style.display = "none";
+	document.getElementById("alert2").style.display = "none";
+	document.getElementById("alert3").style.display = "none";
+	document.getElementById("alert4").style.display = "none";
+	
+	function primary(){
+		document.getElementById("alert1").style.display = "block";
+	}
+	
+	function secondary(){
+		document.getElementById("alert2").style.display = "block";
+	}
+
+	function success(){
+		document.getElementById("alert3").style.display = "block";
+	}
+
+	function danger(){
+		document.getElementById("alert4").style.display = "block";
+	}	
+	</script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+	<!-- Footer -->		
+	<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl" id="footer">
+				<p>PC RESALE LIMITED</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+		
+  </body>
+</html>
